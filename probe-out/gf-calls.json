@@ -1,0 +1,268 @@
+[
+ {
+  "type": "document",
+  "method": "GET",
+  "url": "https://gamefound.com/en/projects/earthborne-games/hubworld-aidalon/updates",
+  "status": 200,
+  "body": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    \r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, viewport-fit=cover, initial-scale=1 minimum-scale=1 maximum-scale=1\">\r\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com/\" crossorigin>\r\n<link rel=\"dns-prefetch\" href=\"https://fonts.googleapis.com/\">\r\n\r\n    <link rel=\"preconnect\" href=\"https://cdn.static.gamefound.com/content/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://cdn.static.gamefound.com/content/\">\r\n    <link rel=\"preconnect\" href=\"https://cdn.static.gamefound.com/unversioned-content/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://cdn.static.gamefound.com/unversioned-content/\">\r\n    <link rel=\"preconnect\" href=\"https://imgcdn.gamefound.com/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://imgcdn.gamefound.com/\">\r\n    <link rel=\"preconnect\" href=\"https://vcdn.gamefound.com/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://vcdn.gamefound.com/\">\r\n    <link rel=\"preconnect\" href=\"https://secure.download.gamefound.com/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://secure.download.gamefound.com/\">\r\n<link href=\"https://fonts.googleapis.com/css?family=Roboto&#x2B;Slab:700|Nunito&#x2B;Sans:300,400,700,800\" rel=\"stylesheet\">\r\n<link href=\"https://cdn.static.gamefound.com/content/20261118.9-13/lib/fontawesome-6.4.2/css/fontawesome-bundle.css\" rel=\"stylesheet\" />\r\n<meta name=\"msapplication-tap-highlight\" content=\"no\">\r\n<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-57x57.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-72x72.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-60x60.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-76x76.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-114x114.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-120x120.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-144x144.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-152x152.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-180x180.png\">\r\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/favicon-32x32.png\" />\r\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/favicon-16x16.png\" />\r\n<link rel=\"manifest\" href=\"/manifest.json\"/>\r\n<link rel=\"mask-icon\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/safari-pinned-tab.svg\" color=\"#5bbad5\" />\r\n<link rel=\"shortcut icon\" href=\"/favicon.ico?v=1_szjInOnLLEcnJ4HqWv-ZjF7uilrJk0JZ8_5dgBaNM\" /> \r\n<meta name=\"msapplication-TileColor\" content=\"#00aba9\" />\r\n<meta name=\"theme-color\" content=\"#ffffff\" />\r\n<title>Hubworld: Aidalon by Earthborne Games - Updates - Gamefound</title>\r\n<meta name=\"description\" content=\"On the hubworld of Aidalon there is no problem that a fistful of shards can&#x27;t solve. Build out your sphere of influence and race to keep your foothold through cunning and subterfuge in this sustainably produced, competitive, expandable card game for 2 &#x2013; 4 players.\" />\r\n<"
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://gamefound.com/api/projectContents/getMiniWizardModel?projectID=4607",
+  "status": 200,
+  "body": "{\"data\":{\"isMiniWizardEnabled\":true,\"productSystemCategories\":[{\"productSystemCategoryID\":10924,\"type\":1},{\"productSystemCategoryID\":10925,\"type\":2}]},\"success\":true,\"message\":null}"
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://gamefound.com/api/projectUpdates/searchProjectUpdates",
+  "status": 200,
+  "post": "{\"projectID\":4607,\"lowestFetchedSequenceNumber\":null,\"searchTerm\":\"\",\"dateFrom\":null,\"dateTo\":null,\"onlyUserRelevant\":false,\"projectUpdateUserContext\":1}",
+  "body": "{\"pagedItems\":[{\"abstract\":\"Fulfillment in the States is about to begin. Plus we have fulfillment timelines for everyone else.\",\"content\":null,\"hasImage\":true,\"imageUrl\":\"https://imgcdn.gamefound.com/projectupdate/projects/4607/19f4a318-b5a6-4106-b1d7-11083da19ee6.png\",\"targetAudience\":0,\"targetUserGroupIDs\":null,\"projectUpdateUrl\":\"/en/projects/earthborne-games/hubworld-aidalon/updates/35\",\"previousUpdateUrl\":null,\"nextUpdateUrl\":null,\"bulkNotificationID\":null,\"createdAt\":\"2026-10-26T21:19:23.833Z\",\"imageFileName\":\"19f4a318-b5a6-4106-b1d7-11083da19ee6.png\",\"isPinned\":false,\"isPublished\":true,\"likesCount\":45,\"pollID\":null,\"projectID\":4607,\"projectUpdateID\":48450,\"publishedAt\":\"2026-10-27T20:17:24.223Z\",\"sequenceNumber\":35,\"sendNotificationsForScheduledProjectUpdate\":false,\"status\":1,\"title\":\"October Update - Fulfillment Begins!\",\"updatedAt\":null},{\"abstract\":\"We have exciting production and fulfillment news, an announcement for our \\\"World Premiere\\\" tournament at PAX Unplugged, and more!\",\"content\":null,\"hasImage\":true,\"imageUrl\":\"https://imgcdn.gamefound.com/projectupdate/projects/4607/57e227cc-f782-4e05-ba94-2637c16cddf0.png\",\"targetAudience\":0,\"targetUserGroupIDs\":null,\"projectUpdateUrl\":\"/en/projects/earthborne-games/hubworld-aidalon/updates/34\",\"previousUpdateUrl\":null,\"nextUpdateUrl\":null,\"bulkNotificationID\":null,\"createdAt\":\"2026-09-22T17:25:17.133Z\",\"imageFileName\":\"57e227cc-f782-4e05-ba94-2637c16cddf0.png\",\"isPinned\":false,\"isPublished\":true,\"likesCount\":48,\"pollID\":null,\"projectID\":4607,\"projectUpdateID\":44746,\"publishedAt\":\"2026-09-22T18:04:23.333Z\",\"sequenceNumber\":34,\"sendNotificationsForScheduledProjectUpdate\":false,\"status\":1,\"title\":\"September Update\",\"updatedAt\":null},{\"abstract\":\"We've got proofs, updates on the art book, a Covenant gameplay video, and more!\",\"content\":null,\"hasImage\":true,\"imageUrl\":\"https://imgcdn.gamefound.com/projectupdate/projects/4607/065c0e1e-d3e1-4add-8add-44ec0cb1912e.png\",\"targetAudience\":0,\"targetUserGroupIDs\":null,\"projectUpdateUrl\":\"/en/projects/earthborne-games/hubworld-aidalon/updates/33\",\"previousUpdateUrl\":null,\"nextUpdateUrl\":null,\"bulkNotificationID\":null,\"createdAt\":\"2026-09-01T20:27:35.177Z\",\"imageFileName\":\"065c0e1e-d3e1-4add-8add-44ec0cb1912e.png\",\"isPinned\":false,\"isPublished\":true,\"likesCount\":46,\"pollID\":null,\"projectID\":4607,\"projectUpdateID\":42865,\"publishedAt\":\"2026-09-02T19:46:36.253Z\",\"sequenceNumber\":33,\"sendNotificationsForScheduledProjectUpdate\":false,\"status\":1,\"title\":\"\\\"August\\\" Update\",\"updatedAt\":null},{\"abstract\":\"The Hubworld: Aidalon pledge manager closes on August 1st! We've got development updates, some exciting news on the preview deck reward, another card preview, and more!\",\"content\":null,\"hasImage\":true,\"imageUrl\":\"https://imgcdn.gamefound.com/projectupdate/projects/4607/1180689e-63e7-4dfa-bd53-3d416c206eb7.png\",\"targetAudience\":0,\"targetUserGroupIDs\":null,\"projectUpdateUrl\":\"/en/projects/earthborne-games/hubworld-aidalon/updates/32\",\"previousUpdateUrl\":null,\"nextUpdateUrl\":null,\"bulkNotificationID\":null,\"createdAt\":\"2026-07-21T17:25:49.02Z\",\"imageFileName\":\"1180689e-63e7-4dfa-bd53-3d416c206eb7.png\",\"isPinned\":false,\"isPublished\":true,\"likesCount\":37,\"pollID\":null,\"projectID\":4607,\"projectUpdateID\":40388,\"publishedAt\":\"2026-07-22T17:35:19.347Z\",\"sequenceNumber\":32,\"sendNotificationsForScheduledProjectUpdate\":false,\"status\":1,\"title\":\"July Update\",\"updatedAt\":null},{\"abstract\":\"We've got exciting updates on how the inaugural set box will be organized, as well as development news, another card preview, and more!\",\"content\":null,\"hasImage\":true,\"imageUrl\":\"https://imgcdn.gamefound.com/projectupdate/projects/4607/aa77a99b-82ab-4641-b2ac-15cf0142c0b3.png\",\"targetAudience\":0,\"targetUserGroupIDs\":null,\"projectUpdateUrl\":\"/en/projects/earthborne-games/hubworld-aidalon/updates/31\",\"previousUpdateUrl\":null,\"nextUpdateUrl\":null,\"bulkNotificationID\":null,\"createdAt\":\"2026-06-30T15:55:28.537Z\",\"imageFileName\":\"aa77a99b-82ab-4641-b2ac-15cf0142c0b3.png\",\"isP"
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://gamefound.com/api/projects/getProjectNavigationBadges?projectID=4607",
+  "status": 200,
+  "body": "{\"badges\":[{\"badge\":\"1787\",\"type\":3},{\"badge\":\"35\",\"type\":4}]}"
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&auid=659641311.1795199532&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20Updates%20-%20Gamefound&tid=AW-327591710&en=page_view&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&scrsrc=www.googletagmanager.com&rnd=221979481.1795199532&navt=n&npa=0&_tu=QA&gtm=45je6bh1v878598054za208zd878598054xecxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616985~115938465~115938468~118131810~120213116~120385422~120469145~120469153~121246026~121246034&tft=1795199532425&tfd=1170&tids=AW-327591710&fmt=8",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=0&auid=659641311.1795199532&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20Updates%20-%20Gamefound&tid=AW-327591710&en=view&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&scrsrc=www.googletagmanager.com&rnd=221979481.1795199532&navt=n&npa=0&ep.event_category=advert_banner&ep.event_label=eldfall-chronicles-apocrypha&ep.non_interaction=0&epn.platform_type=0&_tu=QA&gtm=45je6bh1v878598054za200zd878598054xecxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616985~115938465~115938468~118131810~120213116~120385422~120469145~120469153~121246026~121246034&tft=1795199532427&tfd=1171&tids=AW-327591710&fmt=8",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/327591710/?random=1795199532417&cv=11&fst=1795199532417&fmt=8&bg=ffffff&guid=ON&async=1&en=view&gtm=45je6bh1v878598054za200zd878598054xecxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616985~115938465~115938468~118131810~120213116~120385422~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&rcb=12&frm=0&tiba=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20Updates%20-%20Gamefound&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=659641311.1795199532&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=QA&data=event%3Dview%3Bevent_category%3Dadvert_banner%3Bevent_label%3Deldfall-chronicles-apocrypha%3Bnon_interaction%3Dfalse%3Bplatform_type%3D0&ept=68&gcp=5",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/327591710/?random=1795199532396&cv=11&fst=1795199532396&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je6bh1v878598054za208zd878598054xecxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616985~115938465~115938468~118131810~120213116~120385422~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&rcb=12&frm=0&tiba=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20Updates%20-%20Gamefound&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=659641311.1795199532&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=QA&data=event%3Dgtag.config&ept=68&gcp=5",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://ad.doubleclick.net/ccm/s/collect?auid=659641311.1795199532&gtm=45je6bh1v878598054za208zd878598054xecxf1&fmt=8",
+  "status": 204,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-4BBKPV6544&gtm=45je6bh1v878598054za208zd878598054xf1&_p=1795199531975&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&_eu=AAAAAGAC&cid=733313945.1795199532&frm=0&pscdl=noapi&rcb=12&sr=1280x900&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616985~115938465~115938468~120213116~120385422~120469145~120469153~121246026~121246034&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&sid=1795199532&sct=1&seg=0&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20Updates%20-%20Gamefound&_tu=QA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1138",
+  "status": 204,
+  "body": ""
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://e.clarity.ms/collect",
+  "status": 200,
+  "post": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�R�n�@\u0010���<%�\u0000�\u000b�\u0006�ɵ*�J�\u0017�j�\u0015��,�\u0006�˥�DͷW�I~��J�̙��a^���\u0000wC7�Nj�\u0004P G�5BTء�#�w� B[�2\u0007\u0004_�C���у]�\u001f���\u0015����Pg��{��\u000em��n�γI��Ҧ��CE��\u001b�c�V���YR5�7\u001c���\u001d�\b\t̍�\u0018��Z�\u000e��ш\b��2\u0011�WB�(\bq�~��|��\u00064�\u0001�C<eH����RVU�)���\u001fB|b\u000fe=��)��:�e�á��mz_���g��������\u0003��|�le�/�-[��fo=�f.���I����\u00021\n4��\u000e\u001f\r�M�9[\\�,=�/\u001fC؊�0�m�]�\u0019�q7�\u0018�\u0001[;�5�Sh �/EYS��\u0014!*:ڴ+{\u000b1J��[�D\u0003��\u0014\u0004h�[�;\u000b�s���[\u0014\u0001ªi��N��\t5\u0003�1(��\u0018�(I� 0C\u0003AA(\u001c�q�2��O��A���\u001f�uJ�\u001c��mX\u0011C\n6OK���}�O#������a�Y�D\u0014)_�@���\u0014\u0018�G�D\u0011��!'S#��M\u0019�T�I6'ɜ�\t����1 \u0019B�\u0002>�\t�H���?\u0001<(`v�\u0003\u0000\u0000",
+  "body": "EXTRACT 0 {\"35\":\"@[data-qa*=\\u0027user-box\\u0027][data-qa*=\\u0027Email\\u0027]\"}"
+ },
+ {
+  "type": "document",
+  "method": "POST",
+  "url": "https://www.facebook.com/tr/",
+  "status": 200,
+  "post": "id=196428614117576&ev=PageView&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&rl=&if=false&ts=1795199532702&iw=false&sw=1280&sh=900&udwv%5Bem%5D%5B0%5D%5Bv%5D=05629b09776e8a3bcc6c02c96ad462531cfc1faa88635b7f5ca0dc5b62c5bcc6&udwv%5Bem%5D%5B0%5D%5Bs%5D=1&udwv%5Bem%5D%5B1%5D%5Bv%5D=375874020613a086969da76376ee845607799492b9e4bb151e0f4d1a909ef9b1&udwv%5Bem%5D%5B1%5D%5Bs%5D=1&udwv%5Bem%5D%5B2%5D%5Bv%5D=a9bef51f603ef4b4f75d3520a48a40bceb1d21cd30265d25931b3a9236f729ca&udwv%5Bem%5D%5B2%5D%5Bs%5D=1&udwv%5Bph%5D%5B0%5D%5Bv%5D=e361c4e94c699a481a6437a3e73d6c482cf1110bdee6a735cc11ae0a8337e21e&udwv%5Bph%5D%5B0%5D%5Bs%5D=1&v=2.9.441&r=stable&ec=0&o=14366&aems=0%3B0&fbp=fb.1.1795199532692.11535605326439423&eid=ob3_plugin-set_fae522f8f6881fad6553ca0355bd9d046b150cd467eca528f0eceac5768c10b4&ler=empty&cdl=API_unavailable&pmd%5Btitle%5D=Hubworld%3A+Aidalon+by+Earthborne+Games+-+Updates+-+Gamefound&pmd%5Blocale%5D=en&pmd%5Bdescription%5D=On+the+hubworld+of+Ai",
+  "body": ""
+ },
+ {
+  "type": "document",
+  "method": "POST",
+  "url": "https://www.facebook.com/tr/",
+  "status": 200,
+  "post": "id=681462436803777&ev=PageView&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&rl=&if=false&ts=1795199532718&iw=false&sw=1280&sh=900&v=2.9.441&r=stable&ec=0&o=12318&aems=0%3B0&fbp=fb.1.1795199532692.11535605326439423&ler=empty&cdl=API_unavailable&pmd%5Btitle%5D=Hubworld%3A+Aidalon+by+Earthborne+Games+-+Updates+-+Gamefound&pmd%5Blocale%5D=en&pmd%5Bdescription%5D=On+the+hubworld+of+Aidalon+there+is+no+problem+that+a+fistful+of+shards+can%27t+solve.+Build+out+your+sphere+of+influence+and+race+to+keep+your+foothold+through+cunning+and+subterfuge+in+this+sustainably+produced%2C+competitive%2C+expandable+card+game+for+2+%E2%80%93+4+players.&plt=972.5999999999913&iss=1&imft=1&tz=0&it=1795199532290&coo=false&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%222953271685022123%22%2C%22v%22%3A%5B%22On+the+hubworld+of+Aidalon+there+is+no+problem+that+a+fistful+of+shards+can%27t+solve.+Build+out+your+sphere+of+influence+and+race+to+keep+your+foothold+",
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://7s-d309b5b93ece4e188e0aa4e9c7906f0f.ecs.us-west-1.on.aws/events?cee=no",
+  "status": 200,
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_description\\\":[{\\\"rid\\\":\\\"2953271685022123\\\",\\\"v\\\":[\\\"On the hubworld of Aidalon there is no problem that a fistful of shards can't solve. Build out your sphere of influence and race to keep your foothold through cunning and subterfuge in this sustainably produced, competitive, expandable card game for 2 – 4 players.\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"2091201478495844\\\",\\\"v\\\":[\\\"Updates\\\"]},{\\\"rid\\\":\\\"1136649595369500\\\",\\\"v\\\":[\\\"Updates\\\"]}],\\\"aggregate_rating\\\":[{\\\"rid\\\":\\\"1018708763835027\\\",\\\"v\\\":[\\\"Descend into the Sealed Archives. Your trials await!\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1112271218306123\\\",\\\"v\\\":[\\\"On the hubworld of Aidalon there is no problem that a fistful of shards can't solve. Build out your sphere of influence and race to keep your foothold through cunning and subterfuge in this sustainably produced, competitive, expandable card game for 2 – 4 players.\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1131483196530",
+  "body": ""
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://e.clarity.ms/collect",
+  "status": 204,
+  "post": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�Rێ�0\f�\u0017?\u001fB\u0012 $�+��\u0010\u0002ÖIF$t����\u0015�a��ڷʒ\u0015ߎ}��\"O/\u001dq�����%H\b� �\u0012 3�}���\u0012���!ˉ@�|�͕ ��\n]r�������Oq\u000f#s�Z�P޶��]N��[�\fq\u000b�8�Ryه{�ֱ��h�\u0018��6��\u0013� K/]'��4\u0010h\u0005��i![\t�V0��h��C)p�F�\u0006\u0014��e��\u0013�\"\t�ֵASi�{t\u0007�\u001a\u0002B�\u0006J7��e8�g\t����:�I�B�FGS\f9�9�y����c?\u0004rc`)ۼ8���Gh��:�����\u000f�l�\rv�g��\u0010��l��\u000f1�`�g\u0002=�/1�>���nK~c��_\u001b/����՝ܶ��3�\rv}ˋ;����\u001ed�\u0018�a�n]�9�c\u0001���\u0004O���A�3\t�l��\u0018+n�f0�w��Bkϭ��q��j�\u0013�.�=\u0015w�r!X\f�ޏR�\u0019�Gբ�BPޓC�\u0011-*\u0018�hѠA�\u001a\u001aFq\u0018h�\u0006�Cj�Z�U��B't\u0005->���uU\u0003\u0012���\u001d�}��\u000f�\\�o�\u0003\u0000\u0000",
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-4BBKPV6544&gtm=45je6bh1v878598054za200zd878598054xf1&_p=1795199531975&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&_eu=AAAAAGQC&cid=733313945.1795199532&frm=0&ni=0&pscdl=noapi&rcb=12&sr=1280x900&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=2&tag_exp=115616985~115938465~115938468~118131810~120213116~120385422~120469145~120469153~121246026~121246034&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates&sid=1795199532&sct=1&seg=0&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20Updates%20-%20Gamefound&_tu=QA&en=view&_ee=1&ep.event_category=advert_banner&ep.event_label=eldfall-chronicles-apocrypha&ep.value=&epn.platform_type=0&_et=21&tfd=6162",
+  "status": 204,
+  "body": ""
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://e.clarity.ms/collect",
+  "status": 204,
+  "post": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003��Qk�0\u0010���>�f��D�H\u001erg�Z4\u0011�\u001c���\u0017�\\��e`�e��o?)ҥ'�ۺ��\u001aK hHe\u001dlg\f���1��\u001dw\u0002�6��F\u0002i�њ� �Oѽ�u�\b1�%��HC}ˋ�I�[~����\u0018�r��-��\f��~\\\u001fy��*�\ra�I\u001c�\u0010J�Ƀ\u0002]��8�!\r���h�\u0019D��\u001d�<z㔄d�_�vz0C�\u001c��Cz�O�\u0006�3���?[ǌ��m�H�<�{x��R�,E���U4�0�P\u0006��k\u000b�d�`���7d'���\u0001\u0000\u0000",
+  "body": ""
+ },
+ {
+  "type": "document",
+  "method": "GET",
+  "url": "https://gamefound.com/en/projects/earthborne-games/hubworld-aidalon/updates/35",
+  "status": 200,
+  "body": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    \r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, viewport-fit=cover, initial-scale=1 minimum-scale=1 maximum-scale=1\">\r\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com/\" crossorigin>\r\n<link rel=\"dns-prefetch\" href=\"https://fonts.googleapis.com/\">\r\n\r\n    <link rel=\"preconnect\" href=\"https://cdn.static.gamefound.com/content/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://cdn.static.gamefound.com/content/\">\r\n    <link rel=\"preconnect\" href=\"https://cdn.static.gamefound.com/unversioned-content/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://cdn.static.gamefound.com/unversioned-content/\">\r\n    <link rel=\"preconnect\" href=\"https://imgcdn.gamefound.com/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://imgcdn.gamefound.com/\">\r\n    <link rel=\"preconnect\" href=\"https://vcdn.gamefound.com/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://vcdn.gamefound.com/\">\r\n    <link rel=\"preconnect\" href=\"https://secure.download.gamefound.com/\" crossorigin>\r\n    <link rel=\"dns-prefetch\" href=\"https://secure.download.gamefound.com/\">\r\n<link href=\"https://fonts.googleapis.com/css?family=Roboto&#x2B;Slab:700|Nunito&#x2B;Sans:300,400,700,800\" rel=\"stylesheet\">\r\n<link href=\"https://cdn.static.gamefound.com/content/20261118.9-13/lib/fontawesome-6.4.2/css/fontawesome-bundle.css\" rel=\"stylesheet\" />\r\n<meta name=\"msapplication-tap-highlight\" content=\"no\">\r\n<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-57x57.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-72x72.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-60x60.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-76x76.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-114x114.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-120x120.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-144x144.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-152x152.png\">\r\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/ios/apple-touch-icon-180x180.png\">\r\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/favicon-32x32.png\" />\r\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/favicon-16x16.png\" />\r\n<link rel=\"manifest\" href=\"/manifest.json\"/>\r\n<link rel=\"mask-icon\" href=\"https://cdn.static.gamefound.com/content/20261118.9-13/images/favicon/safari-pinned-tab.svg\" color=\"#5bbad5\" />\r\n<link rel=\"shortcut icon\" href=\"/favicon.ico?v=1_szjInOnLLEcnJ4HqWv-ZjF7uilrJk0JZ8_5dgBaNM\" /> \r\n<meta name=\"msapplication-TileColor\" content=\"#00aba9\" />\r\n<meta name=\"theme-color\" content=\"#ffffff\" />\r\n<title>Hubworld: Aidalon by Earthborne Games - October Update - Fulfillment Begins! - Gamefound</title>\r\n<meta name=\"description\" content=\"Fulfillment in the States is about to begin. Plus we have fulfillment timelines for everyone else.\" />\r\n<meta name=\"keywords\" />\r\n<meta http-equiv=\"Content-Language\" content=\"en\" />\r\n<link rel=\"canonical\" href=\"https://gamefound.com/en/projects/earthborn"
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://gamefound.com/api/projectContents/getMiniWizardModel?projectID=4607",
+  "status": 200,
+  "body": "{\"data\":{\"isMiniWizardEnabled\":true,\"productSystemCategories\":[{\"productSystemCategoryID\":10924,\"type\":1},{\"productSystemCategoryID\":10925,\"type\":2}]},\"success\":true,\"message\":null}"
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://gamefound.com/api/projects/getProjectNavigationBadges?projectID=4607",
+  "status": 200,
+  "body": "{\"badges\":[{\"badge\":\"1787\",\"type\":3},{\"badge\":\"35\",\"type\":4}]}"
+ },
+ {
+  "type": "document",
+  "method": "GET",
+  "url": "https://www.youtube.com/embed/eIx9kdy64oc",
+  "status": 200,
+  "body": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" data-cast-api-enabled=\"true\"><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><script nonce=\"P1up_eivq0vW4CE2zWXlig\">if ('undefined' == typeof Symbol || 'undefined' == typeof Symbol.iterator) {delete Array.prototype.entries;}</script><style name=\"www-roboto\" nonce=\"GfoqTPB8nOUOYsCanw5uIg\">@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;src:url(//fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;src:url(//fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;src:url(//fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;src:url(//fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;src:url(//fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-209F,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;src:url(//fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AE,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F8D0-1F8D8,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FAC6,U+1FAC8,U+1FACC-1FADD,U+1FADF-1FAEB,U+1FAEF-1FAFA,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:normal;font-wei"
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/ccm/form-data/327591710?gtm=45je6bh1v878598054za200zd878598054xecxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131810~120213116~120385423~120469145~120469153~121246026~121246034~124411063&rcb=0&npa=0&frm=0&pscdl=noapi&auid=659641311.1795199532&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=a&ecsid2=1891947328.1795199542&_tu=QA&ec_f=6&en=view&em=tv.1~em.T3KZFS47TfLmUS5Al2Mqzx-ZEG9crQnl6wgR_Ax46i0&ecsid=1771853781.1795199542&emd=tvd.1~i1.fem.ma.r24.n24.lB.s!b64!I3YtYzhmYWQxMDEtOTM3OC00YTI5LWFmYzgtOGMzOTkyNmZmMjQ1PjpudGgtY2hpbGQ&fmt=8",
+  "status": 204,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/327591710/?random=1795199541871&cv=11&fst=1795199541871&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je6bh1v878598054za208zd878598054xecxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131810~120213116~120385423~120469145~120469153~121246026~121246034~124411063&u_w=1280&u_h=900&url=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&rcb=0&frm=0&tiba=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20October%20Update%20-%20Fulfillment%20Begins!%20-%20Gamefound&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=659641311.1795199532&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=QA&data=event%3Dgtag.config&ept=68&gcp=5",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-4BBKPV6544&gtm=45je6bh1v878598054za208zd878598054xf1&_p=1795199541621&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&_eu=AAAAAGQC&cid=733313945.1795199532&frm=0&pscdl=noapi&rcb=0&sr=1280x900&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938469~120213116~120385423~120469145~120469153~121246026~121246034~124411063&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&sid=1795199532&sct=1&seg=1&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20October%20Update%20-%20Fulfillment%20Begins!%20-%20Gamefound&_tu=QA&en=page_view&_ee=1&tfd=576",
+  "status": 204,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=1&auid=659641311.1795199532&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20October%20Update%20-%20Fulfillment%20Begins!%20-%20Gamefound&tid=AW-327591710&en=page_view&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&scrsrc=www.googletagmanager.com&rnd=880964199.1795199542&navt=n&npa=0&_tu=QA&gtm=45je6bh1v878598054za208zd878598054xecxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131810~120213116~120385423~120469145~120469153~121246026~121246034~124411063&tft=1795199541910&tfd=589&tids=AW-327591710&fmt=8",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=0&auid=659641311.1795199532&dt=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20October%20Update%20-%20Fulfillment%20Begins!%20-%20Gamefound&tid=AW-327591710&en=view&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&scrsrc=www.googletagmanager.com&rnd=880964199.1795199542&navt=n&npa=0&ep.event_category=advert_banner&ep.event_label=the-witcher-no-mans-land&ep.non_interaction=0&epn.platform_type=0&_tu=QA&gtm=45je6bh1v878598054za200zd878598054xecxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131810~120213116~120385423~120469145~120469153~121246026~121246034~124411063&tft=1795199541910&tfd=590&tids=AW-327591710&fmt=8",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/pagead/form-data/327591710?gtm=45je6bh1v878598054za200zd878598054xecxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131810~120213116~120385423~120469145~120469153~121246026~121246034~124411063&rcb=0&npa=0&frm=0&pscdl=noapi&auid=659641311.1795199532&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=a&ecsid2=1891947328.1795199542&_tu=QA&ec_f=6&en=view&em=tv.1~em.T3KZFS47TfLmUS5Al2Mqzx-ZEG9crQnl6wgR_Ax46i0&ecsid=1771853781.1795199542&emd=tvd.1~i1.fem.ma.r24.n24.lB.s!b64!I3YtYzhmYWQxMDEtOTM3OC00YTI5LWFmYzgtOGMzOTkyNmZmMjQ1PjpudGgtY2hpbGQ&fmt=8",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/327591710/?random=1795199541898&cv=11&fst=1795199541898&fmt=8&bg=ffffff&guid=ON&async=1&en=view&gtm=45je6bh1v878598054za200zd878598054xecxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131810~120213116~120385423~120469145~120469153~121246026~121246034~124411063&u_w=1280&u_h=900&url=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&rcb=0&frm=0&tiba=Hubworld%3A%20Aidalon%20by%20Earthborne%20Games%20-%20October%20Update%20-%20Fulfillment%20Begins!%20-%20Gamefound&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=659641311.1795199532&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=QA&data=event%3Dview%3Bevent_category%3Dadvert_banner%3Bevent_label%3Dthe-witcher-no-mans-land%3Bnon_interaction%3Dfalse%3Bplatform_type%3D0&ept=68&gcp=5",
+  "status": 200,
+  "body": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://7s-d309b5b93ece4e188e0aa4e9c7906f0f.ecs.us-west-1.on.aws/events?cee=no",
+  "status": 200,
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_description\\\":[{\\\"rid\\\":\\\"2953271685022123\\\",\\\"v\\\":[\\\"On the hubworld of Aidalon there is no problem that a fistful of shards can't solve. Build out your sphere of influence and race to keep your foothold through cunning and subterfuge in this sustainably produced, competitive, expandable card game for 2 – 4 players.\\\"]},{\\\"rid\\\":\\\"2564140590768725\\\",\\\"v\\\":[\\\"Hi everyone,\\\\n\\\\n\\\\nI hope you're doing well wherever you may be. We've got incredibly exciting news to share about fulfillment, so let's get straight to it!\\\\n\\\\n\\\\nFulfillment Update\\\\n\\\\n\\\\nWe are excited to announce that all products have now been shipped to and consolidated at our US warehouse, so fulfillment is about to begin a couple months ahead of our original estimate of January 2027.\\\\n\\\\n\\\\n\\\\n\\\\nWe are currently confirming quantities and scheduling freight shipments, so that we can get those on the water (and\\\"]},{\\\"rid\\\":\\\"1320009430203508\\\",\\\"",
+  "body": ""
+ },
+ {
+  "type": "document",
+  "method": "POST",
+  "url": "https://www.facebook.com/tr/",
+  "status": 200,
+  "post": "id=196428614117576&ev=PageView&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&rl=&if=false&ts=1795199542047&iw=false&sw=1280&sh=900&udwv%5Bem%5D%5B0%5D%5Bv%5D=05629b09776e8a3bcc6c02c96ad462531cfc1faa88635b7f5ca0dc5b62c5bcc6&udwv%5Bem%5D%5B0%5D%5Bs%5D=1&udwv%5Bem%5D%5B1%5D%5Bv%5D=375874020613a086969da76376ee845607799492b9e4bb151e0f4d1a909ef9b1&udwv%5Bem%5D%5B1%5D%5Bs%5D=1&udwv%5Bem%5D%5B2%5D%5Bv%5D=a9bef51f603ef4b4f75d3520a48a40bceb1d21cd30265d25931b3a9236f729ca&udwv%5Bem%5D%5B2%5D%5Bs%5D=1&udwv%5Bph%5D%5B0%5D%5Bv%5D=e361c4e94c699a481a6437a3e73d6c482cf1110bdee6a735cc11ae0a8337e21e&udwv%5Bph%5D%5B0%5D%5Bs%5D=1&v=2.9.441&r=stable&ec=0&o=14366&aems=0%3B0&fbp=fb.1.1795199532692.11535605326439423&eid=ob3_plugin-set_544d882980af553b821cb0012d6ca1997ebf76a57f50f7c1f5918db08d5b25e2&ler=empty&cdl=API_unavailable&pmd%5Btitle%5D=Hubworld%3A+Aidalon+by+Earthborne+Games+-+October+Update+-+Fulfillment+Begins%21+-+Gamefound&pmd%5Blocale%5D=en&pmd%5B",
+  "body": ""
+ },
+ {
+  "type": "document",
+  "method": "POST",
+  "url": "https://www.facebook.com/tr/",
+  "status": 200,
+  "post": "id=681462436803777&ev=PageView&dl=https%3A%2F%2Fgamefound.com%2Fen%2Fprojects%2Fearthborne-games%2Fhubworld-aidalon%2Fupdates%2F35&rl=&if=false&ts=1795199542058&iw=false&sw=1280&sh=900&v=2.9.441&r=stable&ec=0&o=12318&aems=0%3B0&fbp=fb.1.1795199532692.11535605326439423&ler=empty&cdl=API_unavailable&pmd%5Btitle%5D=Hubworld%3A+Aidalon+by+Earthborne+Games+-+October+Update+-+Fulfillment+Begins%21+-+Gamefound&pmd%5Blocale%5D=en&pmd%5Bdescription%5D=Fulfillment+in+the+States+is+about+to+begin.+Plus+we+have+fulfillment+timelines+for+everyone+else.&plt=468.5&iss=1&imft=1&tz=0&it=1795199541806&coo=false&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%222953271685022123%22%2C%22v%22%3A%5B%22On+the+hubworld+of+Aidalon+there+is+no+problem+that+a+fistful+of+shards+can%27t+solve.+Build+out+your+sphere+of+influence+and+race+to+keep+your+foothold+through+cunning+and+subterfuge+in+this+sustainably+produced%2C+competitive%2C+expandable+card+game+for+2+%E2%80%93+4+players.%22%5D%7D%2C%7B%22rid%22%3A%222",
+  "body": ""
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://e.clarity.ms/collect",
+  "status": 200,
+  "post": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003���N�@\f�_e�+��d��d{\u0005���C/\u0000��(���$��Ò�\u0016�ʳW\u000e�<A���=���=����\u0002�#?�^��\u0014P G�%B\\��,�\u0018\u0000AD�\u001de\u0001\bJ�D�\u0001���\u0005�q�\u000e� (��\u0015�Ԯ��k\u0002�\u0006۾���q\b\\ڏ���[�Q�\u0010l�l����K�uZwm0m���@\u0019H\u0010RXZ+0B!C���*A+\u0016(�{$�\u0002\u0011�\b\u0005Y\\��\b\u000fy�?\u0002�\u0003�J��,[�4b\u0016>{�vK�\u001c\u00108$���b\u000b��kU�i`|Ύ~\n�]U��̞��!���d���\u000f�]Vc`��W!;�����BVW������;fg��k\\ ����mZ�}�?\u0002\t\n���d\n-\\�3���=�e/�ˇ\u000e;'\u001d����e�g��\u0000��ש.��n\\;�SWV���ys��\u0006\t�h����-�\u001b��.^˪%/��Ȣ��ˆjt����\u0017IJ�0w�\u001c�\u0016n��;�O��]��1 �w]Y�}GބY\u0000��TS3�\tJ�\u0017d,Ђ.Ɋ��~`$�IR}�k���q��f\u0014��}��c�{j4E\b���L3\u000fY�꠯H�H��}�\u001d}\u001e����c�E\u001c�y\u0010\u0015\u0001h�\u0002\rj\u0014\u001a��8\u0015=未-5J�\u0011�s���&\b��R�\tC�D�\u000f?#�\u0010�Ҩ��jM�\u0004�$��\u0017�\u000bZ�\u0003\u0004\u0000\u0000",
+  "body": "EXTRACT 0 {\"35\":\"@[data-qa*=\\u0027user-box\\u0027][data-qa*=\\u0027Email\\u0027]\"}"
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://googleads.g.doubleclick.net/pagead/id",
+  "status": 200,
+  "body": ")]}'\n\n{\"id\":\"ANyPxKq5HJ9EX-gvr1HweV8P1dARbMRSfiwCw-QY52m5kxvlKiq37fZJ6EpFJhSo0z3RzXxJjixFLvhwLT5ppjmhhIQB5cm8aA\"}"
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+  "status": 200,
+  "post": "[\"O43z0dpjhgX20SCx4KAo\",\"$QN8537tRAAaHOzD5pzvegSixFGVxwhanAEABjq4o3zSYUjqSoAXnVyRAkl2HHSth2ko7roc2TJhd-QsPAXlUse0Bq7efaCpTOg68EgjHbdmprIuI2biDVP16ngAAAGfOAAAACPQBB-IAW49OXpeZK5qwlXjX_lX1kNR9hSCCaq35u0VTLsjOvG0YXxa72ys9NYCcoPKqnmD0UVeyn_8tdgUfa4GNhCsb_EzTe3gcU21ZHXO51wU4ZqIrVEPj24qkzhN_xb8FBRLmb1QWlcOq8fiPf_tBtqFFV6Y4TcW6Uu9JmRPC0UyIoTDH84ivklAZgT7ZnlgmBbhG-_tFhjDG6tHzIOg_Aiohehp6rB4vO1izrChHmFNDM1-HbZRS1-_jIj46GcL6OblY_VibGENh44X2DdGe6GuoANYq9w6HmTeJLR2DouAwF_CNrDs6lWq8taIXqQAE97EsP4SYWEZyMOwSX67FVqtVwOT7iX50yQw0DLkjoVgk1HLWnsbYHuTSjS01KXEGgmVRLW8thGYwDK4VwSTXhgB98VXDQlLIqtKGRzhwJ9Of8O6tW-NbnvxN-IX7FWkslovPkTelod7qUH76wLyT4N3rqj9K_QHPW6WT5BTc0jfnEMMvrWMRhTWZDVHo46oftY8yrqBgB0HjcF_Ae3J_Qz6jfBcOzrIpbxPtYd_xZ7ZxDog4Ha7MVqaws2KdeGAitCaqVEf0CnZCV0woZp4GIGTJRqOE86zJWt9P-s0Zc6UxTJ6zxmwzVs2ZIG6-fVCbaShmTZz_faJTrUJYEiJ96-5IFssHyqzOh4f2Gvl0aJsp0WIfC0Y8dISxAkL8zjjaFxl94v1i0Wmw2z0J-ViLwKK0Sxd6aNRkKNIPEolwRAiUI8_MUO0puY3v2ZsR9QXyZ0a431Rx-XsAfrYD09-GZB55sZ4MgupBswy1FSCeaDY9fQKZnA3kS6U5wqqXntbjVNpz64",
+  "body": "[\"Q7xdPiPWshGNa2IYPcyHglD664RMHHVi0VBX8nDeJy6BWyu2oOiWRtMciYU/udd1zZqRLqfGGnQ94LHqMD+z/A==\",43200,100]"
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://e.clarity.ms/collect",
+  "status": 204,
+  "post": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�Rێ�0\f�\u0017?��\u000b�d~\u0005�\u0010�a�e�\u0011\tE���^�ô;�Z9��c����@p�3�4/\u0006J\u0016P��\u0012��-��i�'�L\u0011\u0010�&��\u0004\bJ>t}ˡ���5�{���lo4�ݏ̅[I��o�\\�%�-]��y*rP,��p�m\u001d\u000b��v\r���M\u0014KUC�`��u�4��)´(���iPp#�(��\u0012�#x�c�m\"@\u0000l�V��{��X\u0015\n\u0014�����zZ�s|Ik������U���\u0017Xa\u0007S�)�9�y%{_b^\u000f �ѳ�lZ\u001c{����º\u000ev;��8N�d��v���\u0005��%6YGC\b��S\u0002���\u001a��\u001b�[���\u0007��~/���\\�;��\u001eaO�@'rN3F6�1��Jn]ܫ��n�p���H���pt�rO�=>���g\u001b�Qq3ԃQ�\"�5qk+2�5�����E��⠘\n��g�ȩ���]��ĺ5�0\u000b�5Vآ@���/'k\u0014\u001c�F�^I��&�\u001c�_�*��N�\bB�O����_�\u00016�j\u0006Z\u0003\u0000\u0000",
+  "body": ""
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+  "status": 200,
+  "post": "{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"US\",\"clientName\":56,\"clientVersion\":\"2.20261119.11.00\",\"configInfo\":{\"appInstallData\":\"CLWkgtgGEMn2gBMQyvuAExCYktMcEMGP0BwQ7fvSHBDeitMcEL22rgUQnOXSHBDcrdIcEI7k0RwQrJbTHBDqjNMcELjkzhwQ2vfOHBCHrM4cENOK0xwQn8-AExDM364FEPCe0xwQ3rzOHBCv8NIcEPDe0RwQgc3OHBCZjbEFEParsAUQsIbPHBD82tIcEL230xwQvv7SHBCu3tEcEPSV0xwQp7_THBCkqdEcEMv70hwQrtbPHBDxtNAcEJKB0xwQ0qTSHBC9irAFEJ7QsAUQl6_SHBCYr9IcELyk0BwQ98DTHBDQ0tMcEMfS0xwQr5nSHBDrsNMcEJbZ0hwQ5brTHBCextMcEL-60xwQ_J3THBDXn9McELiV0xwQr_jRHBC269IcEImwzhwQnZbTHBC--NIcEKWt0xwQ9vfRHBD4ldMcEPeU0xwQ7M3QHCpkQ0FNU1J4VkUtWnEtRE1lVUVwVUNuUnVkQlpqeUQ0QU4xQTdRQlBNRXlRVUlrQWJGQVZtR25la0w1YXdFazh3RHR1UUc1SVVYckxzRDJkVUZueXU5andtMVltZV8yd1gyZkIwSDAA\"},\"userAgent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\",\"connectionType\":\"CONN_CELLULAR_4G\",\"browserName\":\"Chrome\",\"browserVersion\":\"157.0.0.0\",\"osName\":\"X11\",\"platform\":\"DESKTOP\",\"windowWidthPoints\":732,\"windowHeightPoints\":412},\"t",
+  "body": "{\n  \"responseContext\": {}\n}\n"
+ }
+]
