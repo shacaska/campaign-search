@@ -12,14 +12,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Probe
-        env:
-          PROBE_URLS: >-
-            https://www.kickstarter.com/projects/kingdomsforlorn/aeon-trespass-odyssey-second-printing
-            https://gamefound.com/en/projects/earthborne-games/hubworld-aidalon/updates
-            https://gamefound.com/en/projects/earthborne-games/hubworld-aidalon
-        run: node scripts/probe.mjs
+      - run: npm install --no-save playwright@1
+      - name: Probe with real Chrome
+        run: xvfb-run -a node scripts/probe-browser.mjs
       - name: Save results
+        if: always()
         run: |
           git config user.name "probe-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
