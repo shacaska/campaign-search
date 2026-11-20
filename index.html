@@ -6,6 +6,9 @@
   <title>Campaign Update Search: search every Kickstarter &amp; Gamefound update</title>
   <meta name="description" content="A free bookmarklet that searches the full text of every update in a Kickstarter or Gamefound campaign.">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#9a5b1e">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔎</text></svg>">
 </head>
 <body>
@@ -18,6 +21,20 @@
     <section id="home" class="panel">
       <h1>Search every update of a Kickstarter or Gamefound campaign</h1>
       <p class="lede">Looking for the one update that mentioned the <em>eidolons</em>? Add the search button once, open a campaign, tap it, and type. It reads all the updates and highlights every mention.</p>
+
+      <div id="shared" class="notice" hidden>
+        <p id="shared-msg"></p>
+        <p><button id="shared-open" class="btn" type="button">Open campaign</button></p>
+      </div>
+
+      <div id="install-card" class="install">
+        <div>
+          <strong>📲 Install as an app</strong>
+          <p class="small">Campaign Search then appears in your phone's <b>Share</b> menu. Share a campaign from the Kickstarter or Gamefound app, and it opens in your browser ready to search. No more fighting the app.</p>
+          <p class="small muted" id="install-how"></p>
+        </div>
+        <button id="install-btn" class="btn" type="button" hidden>Install</button>
+      </div>
 
       <ol class="steps">
         <li>
@@ -70,6 +87,17 @@
       </ol>
 
       <h2 id="faq">FAQ</h2>
+      <details>
+        <summary>Which browsers work?</summary>
+        <ul>
+          <li><b>Computer:</b> Chrome, Edge, Firefox, Safari, and other mainstream browsers. Use the bookmark button or the userscript.</li>
+          <li><b>Android Chrome:</b> works. Start it from the address bar, not the Bookmarks list.</li>
+          <li><b>Other Chrome-based Android browsers</b> (Edge, Brave, Samsung Internet): should work the same way, but not tested yet.</li>
+          <li><b>Firefox on Android:</b> doesn't run bookmark buttons. Install the Violentmonkey or Tampermonkey add-on, then the <a href="campaign-search.user.js">userscript</a>.</li>
+          <li><b>iPhone / iPad:</b> use Safari. Other iPhone browsers handle bookmark buttons inconsistently.</li>
+        </ul>
+        <p>Sharing to the installed app opens the campaign in the browser you installed it from.</p>
+      </details>
       <details>
         <summary>Does it see backer-only updates?</summary>
         <p>Yes, if you're logged in as a backer. It runs in your own browser with your own login, exactly as if you opened each update yourself. Updates you can't see show up as 🔒 with their title only.</p>

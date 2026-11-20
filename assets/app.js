@@ -49,6 +49,33 @@ document.querySelectorAll('[data-copy]').forEach((btn) =>
 );
 
 // ---------- open a campaign ----------
+const IS_ANDROID = /Android/.test(ua);
+
+// Which Android browser are we in? (An installed app reports the browser that installed it.)
+function browserPackage() {
+  if (/SamsungBrowser/.test(ua)) return 'com.sec.android.app.sbrowser';
+  if (/EdgA\//.test(ua)) return 'com.microsoft.emmx';
+  if (/Firefox\//.test(ua)) return 'org.mozilla.firefox';
+  if (/OPR\//.test(ua)) return 'com.opera.browser';
+  if (navigator.brave) return 'com.brave.browser';
+  return 'com.android.chrome';
+}
+
+// On Android, an intent:// link pinned to the browser package stops the Kickstarter/Gamefound
+// app from grabbing the link. Elsewhere a normal link is fine.
+function openInBrowser(target, newTab = true) {
+  if (IS_ANDROID) {
+    const u = new URL(target);
+    location.href = `intent://${u.host}${u.pathname}${u.search}#Intent;scheme=https;package=${browserPackage()};S.browser_fallback_url=${encodeURIComponent(target)};end`;
+  } else if (newTab) {
+    window.open(target, '_blank', 'noopener');
+  } else {
+    location.href = target;
+  }
+}
+
+const updatesPage = (ref) => (ref.platform === 'kickstarter' ? `${ref.url}/posts` : `${ref.url}/updates`);
+
 $('url-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const ref = parseCampaignUrl($('url-input').value);
@@ -57,15 +84,63 @@ $('url-form').addEventListener('submit', (e) => {
     $('url-error').textContent = 'That doesn’t look like a campaign link. It should look like kickstarter.com/projects/creator/campaign or gamefound.com/en/projects/creator/campaign.';
     return;
   }
-  const target = ref.platform === 'kickstarter' ? `${ref.url}/posts` : `${ref.url}/updates`;
-  if (/Android/.test(navigator.userAgent)) {
-    // Force Chrome instead of letting the Kickstarter/Gamefound app grab the link.
-    const u = new URL(target);
-    location.href = `intent://${u.host}${u.pathname}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(target)};end`;
-  } else {
-    window.open(target, '_blank', 'noopener');
-  }
+  openInBrowser(updatesPage(ref));
 });
+
+// ---------- links shared to the installed app (Android Share menu) ----------
+function handleShare() {
+  const p = new URLSearchParams(location.search);
+  const shared = ['url', 'text', 'title'].map((k) => p.get(k) || '').join(' ').trim();
+  if (!shared) return;
+  history.replaceState(null, '', location.pathname); // don't re-open on refresh
+  const links = shared.match(/https?:\/\/[^\s"'<>]+/gi) || [];
+  let target = null;
+  let label = '';
+  for (const l of links) {
+    const ref = parseCampaignUrl(l);
+    if (ref) { target = updatesPage(ref); label = ref.slug.replace(/-/g, ' '); break; }
+  }
+  // Kickstarter's app often shares a kck.st short link: open it and let it redirect.
+  if (!target) {
+    const short = links.find((l) => /^https?:\/\/([a-z0-9-]+\.)*(kck\.st|kickstarter\.com|gamefound\.com)(\/|$)/i.test(l));
+    if (short) { target = short; label = 'the shared campaign'; }
+  }
+  const card = $('shared');
+  card.hidden = false;
+  if (!target) {
+    $('shared-msg').textContent = 'That share didn’t include a Kickstarter or Gamefound link.';
+    $('shared-open').hidden = true;
+    return;
+  }
+  $('shared-msg').textContent = `Opening ${label} in your browser. Then tap your search bookmark.`;
+  $('shared-open').onclick = () => openInBrowser(target, false);
+  openInBrowser(target, false);
+}
+handleShare();
+
+// ---------- install as an app ----------
+const STANDALONE = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+let installEvent = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  installEvent = e;
+  $('install-btn').hidden = false;
+});
+$('install-btn').addEventListener('click', async () => {
+  if (!installEvent) return;
+  installEvent.prompt();
+  await installEvent.userChoice;
+  installEvent = null;
+  $('install-btn').hidden = true;
+});
+window.addEventListener('appinstalled', () => { $('install-card').hidden = true; });
+if (STANDALONE) $('install-card').hidden = true;
+$('install-how').textContent = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)
+  ? 'In Safari: Share → Add to Home Screen. (iPhone doesn’t let web apps appear in the Share menu, so this just gives you a home-screen shortcut.)'
+  : IS_ANDROID
+    ? 'Or in your browser menu (⋮): Add to Home screen → Install. Then in the Kickstarter or Gamefound app, tap Share → Campaign Search.'
+    : 'Or use the install icon at the right of your browser’s address bar.';
 
 // ---------- saved-file viewer ----------
 const fmtDate = (iso) => (iso ? new Date(iso).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '');
