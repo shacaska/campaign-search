@@ -67,8 +67,8 @@ function setHTML(el, html) {
   try {
     ttPolicy ||= window.trustedTypes.createPolicy('campaign-search', { createHTML: (s) => s });
     el.innerHTML = ttPolicy.createHTML(html);
-  } catch {
-    el.textContent = '';
+  } catch (e) {
+    throw new Error('this page blocks the search panel from drawing itself (' + (e.message || e) + ')');
   }
 }
 

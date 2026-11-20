@@ -24,11 +24,13 @@ if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPo
 else if (/Android/.test(ua)) selectTab('android');
 
 // ---------- bookmarklet ----------
-let bmCode = '';
+const codes = { loader: '', full: '' };
 (async () => {
   try {
-    bmCode = (await (await fetch('assets/bookmarklet.txt', { cache: 'no-cache' })).text()).trim();
-    $('bm-link').href = bmCode;
+    const [a, b] = await Promise.all(['bookmarklet.txt', 'bookmarklet-full.txt'].map((f) => fetch('assets/' + f, { cache: 'no-cache' }).then((r) => r.text())));
+    codes.loader = a.trim();
+    codes.full = b.trim();
+    $('bm-link').href = codes.loader;
   } catch {}
 })();
 $('bm-link').addEventListener('click', (e) => {
@@ -38,10 +40,10 @@ $('bm-link').addEventListener('click', (e) => {
 document.querySelectorAll('[data-copy]').forEach((btn) =>
   btn.addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText(bmCode);
+      await navigator.clipboard.writeText(btn.dataset.copy === 'full' ? codes.full : codes.loader);
       btn.textContent = 'Copied ✓';
     } catch {
-      prompt('Copy this code:', bmCode);
+      prompt('Copy this code:', btn.dataset.copy === 'full' ? codes.full : codes.loader);
     }
   }),
 );
