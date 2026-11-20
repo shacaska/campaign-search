@@ -8,7 +8,7 @@ function fold(str) {
   const map = [];
   for (let i = 0; i < str.length; i++) {
     const ch = str[i];
-    let f = ch.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    let f = ch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     if (f.length !== 1) f = f.length ? f[0] : ch;
     // Treat curly quotes/apostrophes and dashes as plain ones
     if (f === '’' || f === '‘') f = "'";

@@ -35,7 +35,7 @@ export function htmlToText(html) {
   s = decodeEntities(s);
   s = s
     .replace(/\r/g, '')
-    .replace(/[ \t ​]+/g, ' ')
+    .replace(/[ \t\u00a0\u200b]+/g, ' ')
     .replace(/ *\n */g, '\n')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
