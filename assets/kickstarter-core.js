@@ -59,6 +59,7 @@ export async function fetchKickstarterUpdates(ref, graph, opts = {}) {
       } catch (e) {
         lastErr = e;
         if (e.fatal) throw e;
+        if (e.graphql) break; // schema problem: the other slug form won't help, try fewer fields
       }
     }
   }

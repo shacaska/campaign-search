@@ -144,12 +144,12 @@ export function snippets(text, ranges, radius = 110) {
     if (pb >= a) a = pb + 2;
     const pe = text.indexOf('\n\n', e);
     if (pe !== -1 && pe < b) b = pe;
-    // snap to word boundaries
-    if (a > 0) {
+    // snap to word boundaries (unless already at a paragraph/line edge)
+    if (a > 0 && text[a - 1] !== '\n') {
       const sp = text.indexOf(' ', a);
       if (sp !== -1 && sp < s) a = sp + 1;
     }
-    if (b < text.length) {
+    if (b < text.length && text[b] !== '\n') {
       const sp = text.lastIndexOf(' ', b);
       if (sp > e) b = sp;
     }

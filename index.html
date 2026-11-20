@@ -3,97 +3,119 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Campaign Update Search</title>
-  <meta name="description" content="Search the text of every update in a Kickstarter or Gamefound campaign.">
+  <title>Campaign Update Search: search every Kickstarter &amp; Gamefound update</title>
+  <meta name="description" content="A free bookmarklet that searches the full text of every update in a Kickstarter or Gamefound campaign.">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔎</text></svg>">
 </head>
 <body>
   <header class="top">
     <a class="brand" href="./">Campaign<span>Search</span></a>
-    <nav><a href="#about" data-nav="about">How it works</a></nav>
+    <nav><a href="#faq">FAQ</a></nav>
   </header>
 
   <main>
-    <!-- Campaign picker -->
-    <section id="pick" class="panel">
-      <h1>Search every update of a crowdfunding campaign</h1>
-      <p class="lede">Paste a Kickstarter or Gamefound campaign link, then search all of its updates at once.</p>
-      <form id="url-form" class="url-form" autocomplete="off">
-        <input id="url-input" type="url" inputmode="url" placeholder="https://www.kickstarter.com/projects/…" aria-label="Campaign URL" required>
-        <button type="submit">Open</button>
-      </form>
-      <p id="url-error" class="error" hidden></p>
+    <section id="home" class="panel">
+      <h1>Search every update of a Kickstarter or Gamefound campaign</h1>
+      <p class="lede">Looking for the one update that mentioned the <em>eidolons</em>? Add the search button once, open a campaign, tap it, and type. It reads all the updates and highlights every mention.</p>
 
-      <div id="not-indexed" class="notice" hidden>
-        <h2>Not indexed yet</h2>
-        <p><strong id="ni-name"></strong> hasn't been indexed. Indexing grabs every public update and makes it searchable for everyone. It usually takes a minute or two.</p>
-        <div class="actions">
-          <a id="ni-request" class="btn" target="_blank" rel="noopener">Request indexing on GitHub ↗</a>
-          <button id="ni-bookmarklet" class="btn ghost" type="button">Use the bookmarklet instead</button>
-        </div>
-        <p class="small">Requesting needs a free GitHub account. You just submit the pre-filled form. <span id="ni-wait" hidden>⏳ Checking every 20 seconds and will open automatically when it's ready…</span></p>
-      </div>
+      <ol class="steps">
+        <li>
+          <h2>Add the search button <span class="once">(once)</span></h2>
+          <div class="tabs" role="tablist">
+            <button role="tab" data-tab="computer" aria-selected="true">Computer</button>
+            <button role="tab" data-tab="android" aria-selected="false">Android</button>
+            <button role="tab" data-tab="iphone" aria-selected="false">iPhone / iPad</button>
+          </div>
+          <div class="tabpanel" data-panel="computer">
+            <p>Drag this button onto your bookmarks bar. If the bar is hidden, press <kbd>Ctrl/⌘ + Shift + B</kbd>.</p>
+            <p class="bm-wrap"><a id="bm-link" class="bm" href="#">🔎 Search updates</a></p>
+            <p class="small muted">Prefer a button that's always there? Install the <a href="campaign-search.user.js">userscript</a> with Tampermonkey or Violentmonkey. It adds a “Search updates” button to every campaign page.</p>
+          </div>
+          <div class="tabpanel" data-panel="android" hidden>
+            <ol class="sub-steps">
+              <li><button class="btn small-btn" data-copy type="button">Copy the button's code</button></li>
+              <li>In Chrome, bookmark this page (⋮ → ☆), then open ⋮ → Bookmarks, and edit the new bookmark.</li>
+              <li>Name it <code>searchupdates</code> and replace the URL with the code you copied. Save.</li>
+              <li>To use it: on a campaign page, type <code>searchupdates</code> in the address bar and tap the bookmark that appears (the one with the star).</li>
+            </ol>
+          </div>
+          <div class="tabpanel" data-panel="iphone" hidden>
+            <ol class="sub-steps">
+              <li><button class="btn small-btn" data-copy type="button">Copy the button's code</button></li>
+              <li>In Safari, tap Share → <b>Add Bookmark</b> → Save.</li>
+              <li>Open Bookmarks (📖), tap <b>Edit</b>, tap the new bookmark, rename it <code>Search updates</code>, and replace the address with the code you copied. Done.</li>
+              <li>To use it: on a campaign page, open Bookmarks and tap <b>Search updates</b>.</li>
+            </ol>
+            <p class="small muted">With the free <a href="https://apps.apple.com/app/userscripts/id1463298887" rel="noopener">Userscripts</a> Safari extension you can install the <a href="campaign-search.user.js">userscript</a> instead, which adds a permanent button.</p>
+          </div>
+        </li>
 
-      <h2 class="list-h">Indexed campaigns</h2>
-      <input id="filter" class="filter" type="search" placeholder="Filter campaigns…" aria-label="Filter campaigns" hidden>
-      <ul id="campaign-list" class="campaign-list"><li class="muted">Loading…</li></ul>
+        <li>
+          <h2>Open a campaign</h2>
+          <form id="url-form" class="url-form" autocomplete="off">
+            <input id="url-input" type="text" inputmode="url" autocapitalize="off" spellcheck="false" placeholder="Paste a Kickstarter or Gamefound link" aria-label="Campaign URL" required>
+            <button type="submit">Open</button>
+          </form>
+          <p id="url-error" class="error" hidden></p>
+          <p class="small muted">This opens the campaign's Updates page in a new tab. Or just go there the way you normally would.</p>
+        </li>
+
+        <li>
+          <h2>Tap the button and search</h2>
+          <p>A search panel slides in. The first time, it reads every update. That takes a few seconds on Kickstarter, and about a second per update on Gamefound. After that it opens instantly and only fetches new updates.</p>
+          <p>Tips: <code>"phoebe eidolon"</code> for an exact phrase · <code>-stl</code> to exclude a word · matching ignores case and accents, and <code>eidolon</code> also finds <em>eidolons</em>.</p>
+        </li>
+      </ol>
+
+      <h2 id="faq">FAQ</h2>
+      <details>
+        <summary>Does it see backer-only updates?</summary>
+        <p>Yes, if you're logged in as a backer. It runs in your own browser with your own login, exactly as if you opened each update yourself. Updates you can't see show up as 🔒 with their title only.</p>
+      </details>
+      <details>
+        <summary>Is anything sent anywhere?</summary>
+        <p>No. Everything happens on the campaign's own site, in your browser. The update text is cached in your browser so the next search is instant. There's no server and no tracking.</p>
+      </details>
+      <details>
+        <summary>Why can't I just paste a link here and search?</summary>
+        <p>Kickstarter and Gamefound block automated downloads from servers with “verify you are human” checks. The button works because it runs as <em>you</em>, on a page you've already opened.</p>
+      </details>
+      <details>
+        <summary>Can I keep a copy or search offline?</summary>
+        <p>In the search panel, tap <b>Save .json</b>. You can open that file here later and search it. <input id="file-input" type="file" accept=".json,application/json" aria-label="Open saved file"></p>
+      </details>
+      <details>
+        <summary>Something broke</summary>
+        <p>The sites change their pages sometimes. Please <a id="issues-link" href="#">open an issue</a> with the campaign link and the error message shown in the panel.</p>
+      </details>
     </section>
 
-    <!-- Search view -->
+    <!-- Viewer for a saved .json file -->
     <section id="campaign" class="panel" hidden>
-      <a href="./" class="back" data-nav="home">← All campaigns</a>
+      <a href="./" class="back">← Back</a>
       <div class="c-head">
         <h1 id="c-name"></h1>
         <p class="c-meta" id="c-meta"></p>
       </div>
       <form id="search-form" class="search-form" autocomplete="off" role="search">
-        <input id="q" type="search" placeholder="Search updates — e.g. eidolon" aria-label="Search updates" enterkeyhint="search">
+        <input id="q" type="search" placeholder="Search updates, e.g. eidolon" aria-label="Search updates" enterkeyhint="search">
         <div class="opts">
-          <label><select id="mode"><option value="all">All words</option><option value="any">Any word</option></select></label>
-          <label><select id="sort"><option value="relevance">Most mentions</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label>
+          <label><select id="mode" aria-label="Match"><option value="all">All words</option><option value="any">Any word</option></select></label>
+          <label><select id="sort" aria-label="Sort"><option value="relevance">Most mentions</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label>
         </div>
       </form>
-      <p class="hint">Tips: <code>"phoebe eidolon"</code> for an exact phrase · <code>-stl</code> to exclude a word · matching ignores case and accents and finds plurals.</p>
       <p id="summary" class="summary" aria-live="polite"></p>
-      <p id="locked-note" class="small muted" hidden></p>
       <ol id="results" class="results"></ol>
       <div id="browse" hidden>
         <h2 class="list-h">All updates</h2>
         <ol id="all-updates" class="all-updates"></ol>
       </div>
     </section>
-
-    <!-- About / bookmarklet -->
-    <section id="about" class="panel" hidden>
-      <a href="./" class="back" data-nav="home">← Back</a>
-      <h1>How it works</h1>
-      <p>Campaign pages make it hard to find something mentioned in update #37 of 120. This site keeps a plain-text copy of every update so you can search them all at once.</p>
-      <h2>Indexing (for everyone)</h2>
-      <p>When you paste a campaign that isn't indexed yet, the site opens a pre-filled GitHub issue. A GitHub Actions job then downloads the campaign's updates and saves them in this repository, where everyone can search them. Indexed campaigns are refreshed daily, so new updates show up automatically.</p>
-      <p>Servers can only see <em>public</em> updates. Backer-only updates show their title but not their text.</p>
-      <h2 id="bookmarklet">Bookmarklet (for backer-only updates, or instant search)</h2>
-      <p>The bookmarklet runs on the campaign page in <em>your</em> browser, so it can read backer-only updates you have access to. Nothing is sent anywhere. It opens a search panel right on the page.</p>
-      <p class="bm-wrap"><a id="bm-link" class="bm" href="#" onclick="return false">🔎 Search updates</a></p>
-      <details open>
-        <summary>Install on a computer</summary>
-        <p>Drag the button above onto your bookmarks bar. Then, on any Kickstarter or Gamefound campaign page, click the bookmark.</p>
-      </details>
-      <details>
-        <summary>Install on a phone</summary>
-        <ol>
-          <li><button id="bm-copy" class="btn small-btn" type="button">Copy the bookmarklet code</button></li>
-          <li>Bookmark any page, then edit that bookmark: name it <code>searchupdates</code> and paste the code in place of the URL.</li>
-          <li><strong>Android Chrome:</strong> on a campaign page, type <code>searchupdates</code> in the address bar and tap the bookmark suggestion.<br><strong>iPhone Safari:</strong> on a campaign page, open Bookmarks and tap it.</li>
-        </ol>
-      </details>
-      <h2>Load a saved file</h2>
-      <p>The bookmarklet panel can save the updates as a <code>.json</code> file. You can open that file here: <input id="file-input" type="file" accept=".json,application/json"></p>
-    </section>
   </main>
 
   <footer class="foot">
-    Not affiliated with Kickstarter or Gamefound. Update text belongs to each campaign's creator; this is a search aid that links back to the originals.
+    Not affiliated with Kickstarter or Gamefound. Update text belongs to each campaign's creator. This tool only helps you find it and links back to the original.
     · <a id="repo-link" href="#">Source on GitHub</a>
   </footer>
 
