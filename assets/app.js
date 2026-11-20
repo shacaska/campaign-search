@@ -58,7 +58,13 @@ $('url-form').addEventListener('submit', (e) => {
     return;
   }
   const target = ref.platform === 'kickstarter' ? `${ref.url}/posts` : `${ref.url}/updates`;
-  window.open(target, '_blank', 'noopener');
+  if (/Android/.test(navigator.userAgent)) {
+    // Force Chrome instead of letting the Kickstarter/Gamefound app grab the link.
+    const u = new URL(target);
+    location.href = `intent://${u.host}${u.pathname}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(target)};end`;
+  } else {
+    window.open(target, '_blank', 'noopener');
+  }
 });
 
 // ---------- saved-file viewer ----------
