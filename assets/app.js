@@ -139,7 +139,7 @@ if (STANDALONE) $('install-card').hidden = true;
 $('install-how').textContent = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)
   ? 'In Safari: Share → Add to Home Screen. (iPhone doesn’t let web apps appear in the Share menu, so this just gives you a home-screen shortcut.)'
   : IS_ANDROID
-    ? 'Or in your browser menu (⋮): Add to Home screen → Install. Then in the Kickstarter or Gamefound app, tap Share → Campaign Search.'
+    ? 'Or in your browser menu (⋮): Add to Home screen → Install. Copying the link (below) works just as well if you’d rather not install anything.'
     : 'Or use the install icon at the right of your browser’s address bar.';
 
 // ---------- saved-file viewer ----------

@@ -154,3 +154,4 @@ details p { margin: .6em 0; }
 .install > div { flex: 1; }
 .install p { margin: .35em 0; }
 #shared { margin: 16px 0 0; }
+.tip { background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 8px; padding: 8px 10px; font-size: .9rem; }
